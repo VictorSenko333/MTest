@@ -3,11 +3,11 @@ import '../styles/styles.scss'
 import $ from 'jquery'
 import "slick-carousel"
 
-const isMobile = +window.innerWidth < 414;
+const isMobile = +window.innerWidth <= 414;
 console.log(isMobile)
-console.log(window.innerWidth)
+console.log(+window.innerWidth)
 $('.carousel').slick({
-    slidesToShow: isMobile? 3 : 1,
+    slidesToShow: isMobile? 1 : 3,
     slidesToScroll: 1,
 })
 
